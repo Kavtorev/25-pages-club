@@ -1,0 +1,9 @@
+:root{
+    font-size: 16px;
+}
+
+.input-field{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
