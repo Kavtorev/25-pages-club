@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(
+    242.39deg,
+    #10f587 7.03%,
+    rgba(221, 52, 164, 0) 88.43%
+  );
+
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  background-color: #59d89b;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.flexHelper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.decImage {
+  display: block;
+  margin: 3.5rem auto;
+  width: 300px;
+}
+
+.center-align {
+  color: white;
+}
+
+.resetPassword {
+  text-align: right;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #888282;
+}
+
+.btn {
+  background-color: #465455;
+  padding: 0 4rem;
+  border-radius: 5px;
+}
+
+.material-icons {
+  color: #eaeaea;
+}
+
+.alternative {
+  color: #695d5d;
+  cursor: pointer;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.active {
+  color: black;
+}
+
+.input-field .prefix.active {
+  color: #695d5d;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label {
+  color: #eaeaea;
+}
+
+@media only screen and (max-width: 600px) {
+  .decImage {
+    width: 250px;
+  }
+}
