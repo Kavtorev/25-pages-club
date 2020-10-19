@@ -9,7 +9,7 @@ class SignIn extends Component {
   render() {
     return (
       <div className="flexHelper">
-        <div className="container">
+        <div className="container signin__register">
           <div className="row">
             <div className="col s12 m12 l6">
               <img className="decImage" src={reader} alt="" />

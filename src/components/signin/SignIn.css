@@ -1,4 +1,7 @@
-body {
+/* Don't use html tags as names for selectors */
+/* Add nested selectors for global classes of CSS Framework */
+
+.flexHelper {
   background: linear-gradient(
     242.39deg,
     #10f587 7.03%,
@@ -6,20 +9,17 @@ body {
   );
 
   font-family: "Nunito", sans-serif;
-}
-
-.container {
-  background-color: #59d89b;
-  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14);
-  border-radius: 16px;
-  padding: 2rem;
-}
-
-.flexHelper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.container.signin__register {
+  background-color: #59d89b;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14);
+  border-radius: 16px;
+  padding: 2rem;
 }
 
 .decImage {
@@ -39,13 +39,13 @@ body {
   color: #888282;
 }
 
-.btn {
+.container.signin__register .btn {
   background-color: #465455;
   padding: 0 4rem;
   border-radius: 5px;
 }
 
-.material-icons {
+.container.signin__register .material-icons {
   color: #eaeaea;
 }
 
@@ -56,16 +56,20 @@ body {
   margin-top: 0.5rem;
 }
 
-.active {
+.container.signin__register .active {
   color: black;
 }
 
-.input-field .prefix.active {
+.container.signin__register .input-field .prefix.active {
   color: #695d5d;
 }
 
-input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
-input[type="password"]:not(.browser-default):focus:not([readonly]) + label {
+.container.signin__register
+  input[type="text"]:not(.browser-default):focus:not([readonly])
+  + label,
+.container.signin__register
+  input[type="password"]:not(.browser-default):focus:not([readonly])
+  + label {
   color: #eaeaea;
 }
 

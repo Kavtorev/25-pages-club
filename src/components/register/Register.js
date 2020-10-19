@@ -10,7 +10,7 @@ class Register extends Component {
   render() {
     return (
       <div className="flexHelper">
-        <div className="container">
+        <div className="container signin__register">
           <div className="row">
             <div className="col s12 m12 l6">
               <img className="decImage" src={reader} alt="" />
@@ -43,7 +43,6 @@ class Register extends Component {
                     type="password"
                     class="validate"
                     autoComplete="off"
-                    readOnly
                   />
                   <label htmlFor="password">Password</label>
                 </div>
