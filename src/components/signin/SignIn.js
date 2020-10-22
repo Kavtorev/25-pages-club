@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "materialize-css/dist/css/materialize.min.css";
-import "materialize-css/dist/js/materialize.js";
 import "./SignIn.css";
 import reader from "./undraw_book_lover_mkck.png";
 import { Link } from "react-router-dom";
@@ -13,14 +12,6 @@ class SignIn extends Component {
       password: "",
     };
   }
-  // using ES6 arrow functions in order to avoid context binding.
-  handleUsernameEmailChange = (event) => {
-    this.setState({ usernameEmail: event.target.value });
-  };
-
-  handlePasswordChange = (event) => {
-    this.setState({ password: event.target.value });
-  };
 
   render() {
     return (
