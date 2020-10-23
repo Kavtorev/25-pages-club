@@ -15,7 +15,7 @@ class SignIn extends Component {
 
   render() {
     return (
-      <div className="flexHelper">
+      <div className="form_wrapper valign-wrapper">
         <div className="container signin__register">
           <div className="row">
             <div className="col s12 m12 l6">

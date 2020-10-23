@@ -1,7 +1,7 @@
 /* Don't use html tags as names for selectors */
 /* Add nested selectors for global classes of CSS Framework */
 
-.flexHelper {
+.form_wrapper {
   background: -webkit-linear-gradient(
     to right,
     #11998e,
@@ -14,9 +14,6 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   font-family: "Nunito", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
@@ -41,7 +38,7 @@
   width: 300px;
 }
 
-.center-align {
+.container.signin__register .center-align {
   color: white;
 }
 
