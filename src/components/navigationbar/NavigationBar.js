@@ -22,10 +22,10 @@ class NavigationBar extends React.Component {
             <Link to="/" className="brand-logo">
               <img src={logo} style={{ width: 210 }} alt="" />
             </Link>
-            <a href="#!" data-target="mobile-demo" class="sidenav-trigger">
-              <i class="material-icons">menu</i>
+            <a href="#!" data-target="mobile-demo" className="sidenav-trigger">
+              <i className="material-icons">menu</i>
             </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
                 <Link to="/signin" className="">
                   Sign In
@@ -40,7 +40,7 @@ class NavigationBar extends React.Component {
           </div>
         </nav>
 
-        <ul class="sidenav" id="mobile-demo">
+        <ul className="sidenav" id="mobile-demo">
           <li>
             <Link to="/signin" className="sidenav-close">
               Sign In
