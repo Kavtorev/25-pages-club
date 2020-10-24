@@ -1,0 +1,40 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* figure out how to make it sticky ("love CSS") */
+.options .btn-large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 70px;
+  height: 70px;
+  margin: 0.5rem;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+.options .btn-large i {
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .options {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .options .btn-large {
+    width: 60px;
+    height: 60px;
+  }
+
+  .options .btn-large i {
+    font-size: 1.5rem;
+  }
+}
