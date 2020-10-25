@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import "./NavigationBar.css";
 import { Link } from "react-router-dom";
 import logo from "./logo.png";
-import M from "materialize-css/dist/js/materialize.min.js";
+import M from "materialize-css";
 
 class NavigationBar extends React.Component {
   componentDidMount() {
