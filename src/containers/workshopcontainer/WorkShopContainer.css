@@ -1,7 +1,14 @@
 .wrapper {
   margin-top: 2rem;
   box-shadow: 0 0 35px -2px rgba(0, 0, 0, 0.2);
-  /* height: 90vh; */
+  background-color: white;
+}
+
+.sticky__position {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: start;
 }
 
 .wrapper > .row {
@@ -17,5 +24,10 @@
   .main__part {
     border-top: 1px solid #dbdbdb;
     border-left: none;
+  }
+
+  /* back to a static position on mobile devices */
+  .sticky__position {
+    position: static;
   }
 }

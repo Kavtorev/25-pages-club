@@ -4,3 +4,11 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+
+body {
+  background: url("./forest.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
