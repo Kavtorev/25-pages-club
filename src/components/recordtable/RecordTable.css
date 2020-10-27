@@ -1,1 +1,63 @@
+.record__table tbody {
+  display: block;
+  max-height: 70vh;
+  overflow-y: auto;
+}
 
+.record__table thead,
+.record__table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.author__filtering,
+.book__filtering {
+  padding: 0.2rem;
+}
+
+.author__filtering .row,
+.book__filtering .row {
+  margin-bottom: 0;
+}
+
+.alpha__sortion {
+  cursor: pointer;
+}
+
+.editing__cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.editing__cell a {
+  margin: 0 0.125rem;
+}
+
+.date {
+  justify-self: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .record__table th,
+  td {
+    font-size: 1rem;
+  }
+
+  .record__table td {
+    padding: 15px 0;
+  }
+
+  .author__filtering,
+  .book__filtering {
+    padding: 0.2rem;
+  }
+  .author__filtering .row,
+  .book__filtering .row,
+  .book__filtering .input-field,
+  .author__filtering .input-field {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}

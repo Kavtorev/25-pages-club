@@ -8,6 +8,7 @@ function Options({ url }) {
       <div className="option">
         <Link to={url} className="waves-effect waves-light btn-large">
           <i className="medium material-icons">book</i>
+          <p>Records</p>
         </Link>
       </div>
       <div className="option">
@@ -16,6 +17,7 @@ function Options({ url }) {
           className="waves-effect waves-light btn-large"
         >
           <i className="medium material-icons">create</i>
+          <p>Note</p>
         </Link>
       </div>
       <div className="option">
@@ -24,6 +26,7 @@ function Options({ url }) {
           className="waves-effect waves-light btn-large"
         >
           <i className="medium material-icons">add</i>
+          <p>+Log</p>
         </Link>
       </div>
     </div>

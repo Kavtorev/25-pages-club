@@ -15,8 +15,23 @@
   margin: 0.5rem;
 }
 
+.options .btn-large {
+  line-height: 30px;
+  text-transform: none;
+}
+
+.options .btn-large p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+
 .options .btn-large i {
   font-size: 1.8rem;
+}
+
+.option a {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {

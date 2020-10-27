@@ -2,9 +2,11 @@
   margin-top: 2rem;
   box-shadow: 0 0 35px -2px rgba(0, 0, 0, 0.2);
   background-color: white;
+  width: 100%;
 }
 
 .sticky__position {
+  align-items: flex-end;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -18,10 +20,17 @@
 .main__part {
   border-left: 1px solid #dbdbdb;
   padding-left: 1.5rem;
+  box-shadow: 0 0 35px -2px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+
   .main__part {
+    margin-top: 1rem;
     border-top: 1px solid #dbdbdb;
     border-left: none;
   }
