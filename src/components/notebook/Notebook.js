@@ -86,7 +86,7 @@ function Notebook() {
       <div className="row">
         <div className="col s12 m10 offset-m1 l8 offset-l2">
           <div className="input-field">
-            <i class="material-icons prefix">format_align_left</i>
+            <i className="material-icons prefix">format_align_left</i>
             <textarea
               id="textarea2"
               className="materialize-textarea"

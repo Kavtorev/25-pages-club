@@ -20,27 +20,30 @@ function NewRecordForm() {
         </div>
         <div className="row">
           <div className="input-field col s12 m10 offset-m1 l8 offset-l2 testing">
-            <i class="material-icons prefix">date_range</i>
-            <input id="date" type="text" class="datepicker" />
+            <i className="material-icons prefix">date_range</i>
+            <input id="date" type="text" className="datepicker" />
             <label htmlFor="date">Choose date</label>
           </div>
         </div>
         <div className="row">
-          <div class="input-field col s12 m8 offset-m1 l4 offset-l2">
-            <i class="material-icons prefix">chevron_right</i>
+          <div className="input-field col s12 m8 offset-m1 l4 offset-l2">
+            <i className="material-icons prefix">chevron_right</i>
             <input
               placeholder="another 25"
               id="first_name"
               type="number"
-              class="validate"
+              className="validate"
             />
           </div>
         </div>
-        <div class="row">
-          <div class="input-field col s12 m10 offset-m1 l8 offset-l2">
-            <i class="material-icons prefix">format_align_left</i>
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Comments</label>
+        <div className="row">
+          <div className="input-field col s12 m10 offset-m1 l8 offset-l2">
+            <i className="material-icons prefix">format_align_left</i>
+            <textarea
+              id="textarea1"
+              className="materialize-textarea"
+            ></textarea>
+            <label htmlFor="textarea1">Comments</label>
           </div>
         </div>
         <div className="row center-align">
