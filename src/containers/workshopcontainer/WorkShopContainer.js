@@ -3,6 +3,7 @@ import RecordTable from "../../components/recordtable/RecordTable.js";
 import Notebook from "../../components/notebook/Notebook";
 import Options from "../../components/options/Options";
 import NewRecordForm from "../..//components/newrecordform/NewRecordForm";
+import StartARead from "../../components/startaread/StartARead";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import "./WorkShopContainer.css";
 
@@ -26,6 +27,9 @@ function WorkShopContainer() {
                 </Route>
                 <Route path={`${path}/add-record`}>
                   <NewRecordForm />
+                </Route>
+                <Route>
+                  <StartARead />
                 </Route>
               </Switch>
             </div>

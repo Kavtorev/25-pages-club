@@ -1,0 +1,20 @@
+.book__cover {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: all 1s;
+}
+
+.book__cover:hover {
+  transform: scale(1.125);
+}
+
+.margin__top {
+  margin: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}

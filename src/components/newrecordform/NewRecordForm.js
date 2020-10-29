@@ -22,7 +22,7 @@ function NewRecordForm() {
           <div className="input-field col s12 m10 offset-m1 l8 offset-l2 testing">
             <i className="material-icons prefix">date_range</i>
             <input id="date" type="text" className="datepicker" />
-            <label htmlFor="date">Choose date</label>
+            <label htmlFor="date">Choose a date</label>
           </div>
         </div>
         <div className="row">
@@ -30,7 +30,6 @@ function NewRecordForm() {
             <i className="material-icons prefix">chevron_right</i>
             <input
               placeholder="another 25"
-              id="first_name"
               type="number"
               className="validate"
             />

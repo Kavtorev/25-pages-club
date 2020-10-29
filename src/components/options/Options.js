@@ -29,6 +29,15 @@ function Options({ url }) {
           <p>+Log</p>
         </Link>
       </div>
+      <div className="option">
+        <Link
+          to={`${url}/add-a-read`}
+          className="waves-effect waves-light btn-large"
+        >
+          <i className="medium material-icons">add</i>
+          <p>+Log</p>
+        </Link>
+      </div>
     </div>
   );
 }
