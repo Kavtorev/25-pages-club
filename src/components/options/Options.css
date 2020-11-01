@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   flex: 0 0 auto;
+  min-height: 80vh;
+  justify-content: center;
 }
 
 /* figure out how to make it sticky ("love CSS") */
@@ -34,10 +36,21 @@
   flex-direction: column;
 }
 
+.dot {
+  height: 30px;
+  width: 30px;
+  /* background-color: #bbb; */
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  /* background-color: #fff; */
+  font-size: 0.9rem;
+}
 @media only screen and (max-width: 600px) {
   .options {
     flex-direction: row;
     justify-content: space-evenly;
+    min-height: 1px;
   }
 
   .options .btn-large {

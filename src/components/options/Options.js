@@ -6,36 +6,36 @@ function Options({ url }) {
   return (
     <div className="options">
       <div className="option">
-        <Link to={url} className="waves-effect waves-light btn-large">
-          <i className="medium material-icons">book</i>
+        <Link to={url} className="waves-effect waves-red btn-large">
+          <i className="medium material-icons">event_note</i>
           <p>Records</p>
         </Link>
       </div>
       <div className="option">
         <Link
           to={`${url}/notation`}
-          className="waves-effect waves-light btn-large"
+          className="waves-effect waves-orange btn-large"
         >
-          <i className="medium material-icons">create</i>
+          <i className="medium material-icons">note_add</i>
           <p>Note</p>
         </Link>
       </div>
       <div className="option">
         <Link
-          to={`${url}/add-record`}
-          className="waves-effect waves-light btn-large"
+          to={`${url}/add-a-record`}
+          className="waves-effect waves-purple btn-large"
         >
-          <i className="medium material-icons">add</i>
-          <p>+Log</p>
+          <span class="dot">+25</span>
+          <p>Progress</p>
         </Link>
       </div>
       <div className="option">
         <Link
-          to={`${url}/add-a-read`}
-          className="waves-effect waves-light btn-large"
+          to={`${url}/start-a-read`}
+          className="waves-effect waves-green btn-large"
         >
-          <i className="medium material-icons">add</i>
-          <p>+Log</p>
+          <i className="medium material-icons">book</i>
+          <p>Start</p>
         </Link>
       </div>
     </div>

@@ -25,10 +25,10 @@ function WorkShopContainer() {
                 <Route path={`${path}/notation`}>
                   <Notebook />
                 </Route>
-                <Route path={`${path}/add-record`}>
+                <Route path={`${path}/add-a-record`}>
                   <NewRecordForm />
                 </Route>
-                <Route>
+                <Route path={`${path}/start-a-read`}>
                   <StartARead />
                 </Route>
               </Switch>
