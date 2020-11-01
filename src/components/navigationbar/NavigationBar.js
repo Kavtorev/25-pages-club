@@ -25,7 +25,28 @@ class NavigationBar extends React.Component {
             <a href="#!" data-target="mobile-demo" className="sidenav-trigger">
               <i className="material-icons">menu</i>
             </a>
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <ul id="nav-mobile" className="right hide-on-small-and-down">
+              <li>
+                <Link to="/workshop" className="">
+                  Table
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/workshop/notation" className="">
+                  Add a new note
+                </Link>
+              </li>
+              <li>
+                <Link to="/workshop/add-a-record" className="">
+                  Another 25 pages
+                </Link>
+              </li>
+              <li>
+                <Link to="/workshop/start-a-read" className="">
+                  Start a read
+                </Link>
+              </li>
               <li>
                 <Link to="/signin" className="">
                   Sign In
@@ -41,6 +62,27 @@ class NavigationBar extends React.Component {
         </nav>
 
         <ul className="sidenav" id="mobile-demo">
+          <li>
+            <Link to="/workshop" className="sidenav-close">
+              Table
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/workshop/notation" className="sidenav-close">
+              Add a new note
+            </Link>
+          </li>
+          <li>
+            <Link to="/workshop/add-a-record" className="sidenav-close">
+              Another 25 pages
+            </Link>
+          </li>
+          <li>
+            <Link to="/workshop/start-a-read" className="sidenav-close">
+              Start a read
+            </Link>
+          </li>
           <li>
             <Link to="/signin" className="sidenav-close">
               Sign In
