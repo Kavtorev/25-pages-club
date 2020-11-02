@@ -6,6 +6,15 @@ function Options({ url }) {
   return (
     <div className="options">
       <div className="option">
+        <Link
+          to={`${url}/stats`}
+          className="waves-effect waves-green btn-large"
+        >
+          <i className="medium material-icons">book</i>
+          <p>Stats</p>
+        </Link>
+      </div>
+      <div className="option">
         <Link to={url} className="waves-effect waves-red btn-large">
           <i className="medium material-icons">event_note</i>
           <p>Records</p>

@@ -4,6 +4,7 @@ import Notebook from "../../components/notebook/Notebook";
 import Options from "../../components/options/Options";
 import NewRecordForm from "../..//components/newrecordform/NewRecordForm";
 import StartARead from "../../components/startaread/StartARead";
+import Stats from "../../components/stats/Stats";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import "./WorkShopContainer.css";
 
@@ -17,25 +18,28 @@ function WorkShopContainer() {
             <Options url={url} />
           </div>
           <div className="col s12 m10">
-            <div className="main__part">
-              <Switch>
-                <Route exact path={path}>
-                  <RecordTable />
-                </Route>
-                <Route path={`${path}/notation`}>
-                  <Notebook />
-                </Route>
-                <Route path={`${path}/add-a-record`}>
-                  <NewRecordForm />
-                </Route>
-                <Route path={`${path}/start-a-read`}>
-                  <StartARead />
-                </Route>
-              </Switch>
-            </div>
+            {/* <div className="main__part"> */}
+            <Switch>
+              <Route exact path={path}>
+                <RecordTable />
+              </Route>
+              <Route path={`${path}/notation`}>
+                <Notebook />
+              </Route>
+              <Route path={`${path}/add-a-record`}>
+                <NewRecordForm />
+              </Route>
+              <Route path={`${path}/start-a-read`}>
+                <StartARead />
+              </Route>
+              <Route path={`${path}/stats`}>
+                <Stats />
+              </Route>
+            </Switch>
           </div>
         </div>
       </div>
+      {/* </div> */}
     </main>
   );
 }

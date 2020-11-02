@@ -1,4 +1,0 @@
-/* Register.css can be used for overriding purposes, as far as SignIn and Register components are almost the same. */
-.container.signin__register.register .input-field:not(.last__input) {
-  margin-bottom: 0;
-}

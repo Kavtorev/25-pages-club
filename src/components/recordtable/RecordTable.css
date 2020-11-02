@@ -39,6 +39,10 @@
   justify-self: flex-end;
 }
 
+.field__names th {
+  padding: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .record__table th,
   td {
