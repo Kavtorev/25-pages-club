@@ -1,0 +1,20 @@
+.wrapper__stats {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.stats {
+  padding: 2rem;
+}
+
+.stats p {
+  font-size: 1.3em;
+}
+
+.stats .stat {
+  font-size: 1.4em;
+  font-weight: bold;
+}
