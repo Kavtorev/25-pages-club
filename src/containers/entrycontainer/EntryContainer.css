@@ -1,0 +1,85 @@
+/* Don't use html tags as names for selectors */
+/* Add nested selectors for global classes of CSS Framework */
+
+/* entry.css combines styles which are shared between 'register' and 'signin' components */
+/* if you wish to add unique styles to one of those, update css files named after the component names */
+.form_wrapper {
+  background: -webkit-linear-gradient(
+    to right,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+}
+
+.container.template__container {
+  background-color: #59d89b;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14);
+  border-radius: 16px;
+}
+
+/* style for the row which wraps the subrows */
+.container.template__container > .row {
+  padding: 2rem;
+}
+/* styles for the subrows */
+.container.template__container .row {
+  margin-bottom: 0;
+}
+
+.decImage {
+  display: block;
+  margin: 3.5rem auto;
+  width: 300px;
+}
+
+.container.template__container .center-align {
+  color: white;
+}
+
+.container.template__container .btn {
+  background-color: #465455;
+  padding: 0 4rem;
+  border-radius: 5px;
+}
+
+.container.template__container .material-icons {
+  color: #eaeaea;
+}
+
+.alternative {
+  color: #695d5d;
+  cursor: pointer;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.container.template__container .active {
+  color: black;
+}
+
+.container.template__container .input-field .prefix.active {
+  color: #695d5d;
+}
+
+.container.template__container
+  input[type="text"]:not(.browser-default):focus:not([readonly])
+  + label,
+.container.template__container
+  input[type="password"]:not(.browser-default):focus:not([readonly])
+  + label {
+  color: #eaeaea;
+}
+
+@media only screen and (max-width: 600px) {
+  .decImage {
+    width: 250px;
+  }
+}
