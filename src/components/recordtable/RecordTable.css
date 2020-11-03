@@ -25,22 +25,32 @@
   cursor: pointer;
 }
 
-.editing__cell {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.editing__cell a {
-  margin: 0 0.125rem;
-}
-
 .date {
   justify-self: flex-end;
 }
 
 .field__names th {
   padding: 0;
+}
+
+/* .editing__wrapper {
+  padding: 0.5rem;
+} */
+
+.editing__sell {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.editing__sell a.save {
+  margin-right: 0.5rem;
+}
+
+.editing__sell p.date {
+  display: inline;
+  margin: auto auto;
+  justify-self: center;
 }
 
 @media only screen and (max-width: 600px) {

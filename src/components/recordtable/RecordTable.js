@@ -17,21 +17,12 @@ function RecordTable() {
     <table className="striped centered record__table">
       <thead>
         <tr className="field__names">
-          <th>Date</th>
           <th>Author</th>
           <th>Book</th>
+          <th>Date</th>
           <th>Pages</th>
         </tr>
         <tr>
-          <th>
-            <a
-              href="#!"
-              className="btn-floating btn waves-effect waves-light "
-              onClick={handleOnClick}
-            >
-              <i className="material-icons">sort_by_alpha</i>
-            </a>
-          </th>
           <th className="author__filtering">
             <div className="row">
               <div className="input-field col s8 offset-s2">
@@ -49,7 +40,7 @@ function RecordTable() {
             <div className="row">
               <div className="input-field col s8 offset-s2">
                 <input
-                  placeholder="Filter"
+                  placeholder="Books"
                   id="book_filter"
                   type="text"
                   className="validate"
@@ -61,10 +52,20 @@ function RecordTable() {
           <th>
             <a
               href="#!"
-              className="btn-floating btn waves-effect waves-light "
+              className="btn waves-effect waves-light "
               onClick={handleOnClick}
             >
-              <i className="material-icons">sort_by_alpha</i>
+              <i class="fas fa-sort-alpha-down"></i>
+            </a>
+          </th>
+
+          <th>
+            <a
+              href="#!"
+              className="btn waves-effect waves-light "
+              onClick={handleOnClick}
+            >
+              <i class="fas fa-sort-alpha-down"></i>
             </a>
           </th>
         </tr>
@@ -72,26 +73,38 @@ function RecordTable() {
       <tbody>
         <tr>
           <td>
-            <div className="editing__cell">
-              <div className="editing__buttons">
-                <a
-                  href="#!"
-                  className="btn-floating btn-small waves-effect waves-light "
-                  onClick={handleOnClick}
-                >
-                  <i className="material-icons">edit</i>
-                </a>
-              </div>
-              <span className="date">21 / 01 / 2001</span>
+            <div className="editing__sell">
+              <a
+                href="#!"
+                class="btn-floating btn-small waves-effect waves-light"
+              >
+                <i class="fas fa-edit"></i>
+              </a>
+              <p className="date">21 / 07 / 2001</p>
             </div>
           </td>
           <td>Jules Verne</td>
           <td>Mistical Island</td>
           <td>25</td>
         </tr>
-
         <tr>
-          <td>21 / 01 / 2001</td>
+          <td>
+            <div className="editing__sell">
+              <a
+                href="#!"
+                class="btn-floating btn-small waves-effect waves-light save"
+              >
+                <i class="fas fa-save"></i>
+              </a>
+              <a
+                href="#!"
+                class="btn-floating btn-small waves-effect waves-light"
+              >
+                <i class="fas fa-undo-alt"></i>
+              </a>
+              <p className="date">21 / 07 / 2001</p>
+            </div>
+          </td>
           <td>Jules Verne</td>
           <td>Mistical Island</td>
           <td>25</td>
