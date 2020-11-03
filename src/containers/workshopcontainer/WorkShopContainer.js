@@ -17,8 +17,7 @@ function WorkShopContainer() {
           <div className="col s12 m2 sticky__position">
             <Options url={url} />
           </div>
-          <div className="col s12 m10">
-            {/* <div className="main__part"> */}
+          <div className="col s12 m10 custom__margin">
             <Switch>
               <Route exact path={path}>
                 <RecordTable />
@@ -39,7 +38,6 @@ function WorkShopContainer() {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </main>
   );
 }
