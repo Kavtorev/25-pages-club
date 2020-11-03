@@ -8,6 +8,7 @@ import Register from "./components/register/Register.js";
 import ForgotAPassword from "./components/forgotapass/ForgotAPassword";
 import WorkShopContainer from "./containers/workshopcontainer/WorkShopContainer";
 import EntryContainer from "./containers/entrycontainer/EntryContainer";
+import BottomNavigation from "./components/bottomnavigation/BottomNavigation";
 
 const renderEntryContainer = (component) => {
   return <EntryContainer>{component}</EntryContainer>;
@@ -23,6 +24,7 @@ function App() {
         <Route path="/workshop">
           <NavigationBar />
           <WorkShopContainer />
+          <BottomNavigation />
         </Route>
         <Route path="/signin">{renderEntryContainer(<SignIn />)}</Route>
         <Route path="/register">{renderEntryContainer(<Register />)}</Route>
