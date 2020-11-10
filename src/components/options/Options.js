@@ -10,13 +10,13 @@ function Options({ url }) {
           to={`${url}/stats`}
           className="waves-effect waves-green btn-large"
         >
-          <i class="fas fa-chart-line"></i>
+          <i className="fas fa-chart-line"></i>
           <p>Stats</p>
         </Link>
       </div>
       <div className="option">
         <Link to={url} className="waves-effect waves-red btn-large">
-          <i class="fas fa-table"></i>
+          <i className="fas fa-table"></i>
           <p>Records</p>
         </Link>
       </div>
@@ -25,7 +25,7 @@ function Options({ url }) {
           to={`${url}/notation`}
           className="waves-effect waves-orange btn-large"
         >
-          <i class="fas fa-pencil-alt"></i>
+          <i className="fas fa-pencil-alt"></i>
           <p>Note</p>
         </Link>
       </div>
@@ -34,7 +34,7 @@ function Options({ url }) {
           to={`${url}/add-a-record`}
           className="waves-effect waves-purple btn-large"
         >
-          <i class="far fa-plus-square"></i>
+          <i className="far fa-plus-square"></i>
           <p>Progress</p>
         </Link>
       </div>
@@ -43,7 +43,7 @@ function Options({ url }) {
           to={`${url}/start-a-read`}
           className="waves-effect waves-green btn-large"
         >
-          <i class="fas fa-book"></i>
+          <i className="fas fa-book"></i>
           <p>Start</p>
         </Link>
       </div>
