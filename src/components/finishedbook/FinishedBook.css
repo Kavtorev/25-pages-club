@@ -1,0 +1,105 @@
+.finished__book__view {
+  box-shadow: 0 0 35px -2px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.image__wrapper {
+  background-image: url("https://static01.nyt.com/images/2014/02/05/books/05before-and-after-slide-T6H2/05before-and-after-slide-T6H2-superJumbo.jpg?quality=75&auto=webp&disable=upscale");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.book__cover__finished {
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.finished__title,
+.finished__author,
+.rating {
+  margin: 0;
+  color: #494747;
+}
+
+.finished__author {
+  font-size: 0.9rem;
+}
+
+.rating {
+  font-size: 1.2rem;
+}
+
+.fab.fa-canadian-maple-leaf {
+  color: green;
+  transform: rotate(40deg);
+}
+
+.review {
+  width: 100%;
+  max-height: 180px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.new.badge {
+  margin-top: 0.2rem;
+}
+
+.collapsible-header {
+  padding: 0.6rem;
+}
+
+.note__name {
+  font-size: 0.9rem;
+}
+
+.note__date {
+  margin-left: auto;
+}
+
+.page__range {
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.page__range hr {
+  display: inline-block;
+  width: 40%;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 992px) {
+  .book__bio {
+    text-align: center;
+  }
+  .margin__top {
+    margin-top: 0;
+  }
+
+  .disable__padding__on__small {
+    padding: 0 !important;
+  }
+
+  .book__cover__finished {
+    width: 220px;
+  }
+
+  .finished__book__view {
+    padding: 0;
+  }
+
+  .padding__on__small {
+    padding: 1rem;
+  }
+
+  .margin__bottom {
+    margin-bottom: 5rem;
+  }
+}
