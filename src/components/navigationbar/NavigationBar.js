@@ -1,102 +1,112 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import "./NavigationBar.css";
 import { Link } from "react-router-dom";
 import logo from "./logo.png";
 import M from "materialize-css";
 
-class NavigationBar extends React.Component {
-  componentDidMount() {
-    this.initializeSideNavPlugin();
-  }
-
-  initializeSideNavPlugin() {
+function NavigationBar(props) {
+  const initializeSideNavPlugin = () => {
     const elems = document.querySelectorAll(".sidenav");
     M.Sidenav.init(elems, {});
-  }
+  };
 
-  render() {
-    return (
-      <Fragment>
-        <nav className="navigation">
-          <div className="nav-wrapper">
-            <Link to="/" className="brand-logo">
-              <img src={logo} style={{ width: 210 }} alt="" />
-            </Link>
-            <a href="#!" data-target="mobile-demo" className="sidenav-trigger">
-              <i className="material-icons">menu</i>
-            </a>
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li>
-                <Link to="/workshop" className="">
-                  Table
-                </Link>
-              </li>
+  useEffect(() => {
+    initializeSideNavPlugin();
+  }, []);
 
-              <li>
-                <Link to="/workshop/notation" className="">
-                  Add a new note
-                </Link>
-              </li>
-              <li>
-                <Link to="/workshop/add-a-record" className="">
-                  Another 25 pages
-                </Link>
-              </li>
-              <li>
-                <Link to="/workshop/start-a-read" className="">
-                  Start a read
-                </Link>
-              </li>
-              <li>
-                <Link to="/signin" className="">
-                  Sign In
-                </Link>
-              </li>
-              <li>
-                <Link to="/register" className="">
-                  Sign Up
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  return (
+    <Fragment>
+      <nav className="navigation">
+        <div className="nav-wrapper">
+          <Link to="/" className="brand-logo">
+            <img src={logo} style={{ width: 210 }} alt="" />
+          </Link>
+          <a href="#!" data-target="mobile-demo" className="sidenav-trigger">
+            <i className="material-icons">menu</i>
+          </a>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li>
+              <Link to="/shelf" className="">
+                Shelf
+              </Link>
+            </li>
 
-        <ul className="sidenav" id="mobile-demo">
-          <li>
-            <Link to="/workshop" className="sidenav-close">
-              Table
-            </Link>
-          </li>
+            <li>
+              <Link to="/workshop" className="">
+                Table
+              </Link>
+            </li>
 
-          <li>
-            <Link to="/workshop/notation" className="sidenav-close">
-              Add a new note
-            </Link>
-          </li>
-          <li>
-            <Link to="/workshop/add-a-record" className="sidenav-close">
-              Another 25 pages
-            </Link>
-          </li>
-          <li>
-            <Link to="/workshop/start-a-read" className="sidenav-close">
-              Start a read
-            </Link>
-          </li>
-          <li>
-            <Link to="/signin" className="sidenav-close">
-              Sign In
-            </Link>
-          </li>
-          <li>
-            <Link to="/register" className="sidenav-close">
-              Sign Up
-            </Link>
-          </li>
-        </ul>
-      </Fragment>
-    );
-  }
+            <li>
+              <Link to="/workshop/notation" className="">
+                Add a new note
+              </Link>
+            </li>
+            <li>
+              <Link to="/workshop/add-a-record" className="">
+                Another 25 pages
+              </Link>
+            </li>
+            <li>
+              <Link to="/workshop/start-a-read" className="">
+                Start a read
+              </Link>
+            </li>
+            <li>
+              <Link to="/signin" className="">
+                Sign In
+              </Link>
+            </li>
+            <li>
+              <Link to="/register" className="">
+                Sign Up
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul className="sidenav" id="mobile-demo">
+        <li>
+          <Link to="/shelf" className="">
+            Shelf
+          </Link>
+        </li>
+        <li>
+          <Link to="/workshop" className="sidenav-close">
+            Table
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/workshop/notation" className="sidenav-close">
+            Add a new note
+          </Link>
+        </li>
+        <li>
+          <Link to="/workshop/add-a-record" className="sidenav-close">
+            Another 25 pages
+          </Link>
+        </li>
+        <li>
+          <Link to="/workshop/start-a-read" className="sidenav-close">
+            Start a read
+          </Link>
+        </li>
+        <li>
+          <Link to="/signin" className="sidenav-close">
+            Sign In
+          </Link>
+        </li>
+        <li>
+          <Link to="/register" className="sidenav-close">
+            Sign Up
+          </Link>
+        </li>
+      </ul>
+      {props.children}
+    </Fragment>
+  );
 }
 
 export default NavigationBar;

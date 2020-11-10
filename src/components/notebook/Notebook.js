@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Notebook.css";
-import M from "materialize-css";
 import "materialize-css/extras/noUiSlider/nouislider.css";
 import noUiSlider from "materialize-css/extras/noUiSlider/nouislider";
 import { useHistory } from "react-router-dom";

@@ -7,11 +7,11 @@
 }
 
 .book__cover:hover {
-  transform: scale(1.125);
+  transform: scale(1.075);
 }
 
 .margin__top {
-  margin: 2rem;
+  margin-top: 2rem;
 }
 
 .title__text {
