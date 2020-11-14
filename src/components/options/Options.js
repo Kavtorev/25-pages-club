@@ -1,52 +1,69 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Options.css";
+import { Link, useRouteMatch } from "react-router-dom";
+import styles from "./options.module.css";
+import cx from "classnames";
 
-function Options({ url }) {
+function OptionButton({ childUrl, text, icon }) {
+  const { url } = useRouteMatch();
   return (
-    <div className="options hide-on-small-and-down">
-      <div className="option">
-        <Link
-          to={`${url}/stats`}
-          className="waves-effect waves-green btn-large"
-        >
-          <i className="fas fa-chart-line"></i>
-          <p>Stats</p>
-        </Link>
-      </div>
-      <div className="option">
-        <Link to={url} className="waves-effect waves-red btn-large">
-          <i className="fas fa-table"></i>
-          <p>Records</p>
-        </Link>
-      </div>
-      <div className="option">
-        <Link
-          to={`${url}/notation`}
-          className="waves-effect waves-orange btn-large"
-        >
-          <i className="fas fa-pencil-alt"></i>
-          <p>Note</p>
-        </Link>
-      </div>
-      <div className="option">
-        <Link
-          to={`${url}/add-a-record`}
-          className="waves-effect waves-purple btn-large"
-        >
-          <i className="far fa-plus-square"></i>
-          <p>Progress</p>
-        </Link>
-      </div>
-      <div className="option">
-        <Link
-          to={`${url}/start-a-read`}
-          className="waves-effect waves-green btn-large"
-        >
-          <i className="fas fa-book"></i>
-          <p>Start</p>
-        </Link>
-      </div>
+    <div className={styles.option}>
+      <Link
+        to={`${url}${childUrl}`}
+        className={cx(
+          styles.option__button,
+          "waves-effect",
+          "waves-green",
+          "btn-large"
+        )}
+      >
+        {icon}
+        <p>{text}</p>
+      </Link>
+    </div>
+  );
+}
+
+function Options() {
+  const options = [
+    {
+      text: "Stats",
+      url: "/stats",
+      icon: <i className="fas fa-chart-line"></i>,
+    },
+    {
+      text: "Records",
+      url: "",
+      icon: <i className="fas fa-table"></i>,
+    },
+    {
+      text: "Note",
+      url: "/notation",
+      icon: <i className="fas fa-pencil-alt"></i>,
+    },
+    {
+      text: "Progress",
+      url: "/add-a-record",
+      icon: <i className="far fa-plus-square"></i>,
+    },
+    {
+      text: "Start",
+      url: "/start-a-read",
+      icon: <i className="fas fa-book"></i>,
+    },
+  ];
+
+  return (
+    <div className={cx(styles.options, "hide-on-small-and-down")}>
+      {options.map((btn) => {
+        return (
+          <OptionButton
+            childUrl={btn.url}
+            text={btn.text}
+            icon={btn.icon}
+            key={Math.random()}
+          />
+        );
+      })}
     </div>
   );
 }

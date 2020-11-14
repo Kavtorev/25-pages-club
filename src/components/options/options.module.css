@@ -1,0 +1,35 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  min-height: 80vh;
+  justify-content: center;
+}
+
+.options .option__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 0.5rem;
+}
+
+.options .option__button {
+  line-height: 30px;
+  text-transform: none;
+}
+
+.options .option__button .button__text {
+  font-size: 0.9rem;
+}
+
+.options .option__button .button__icon {
+  font-size: 1.8rem;
+}
+
+.option .option__button {
+  display: flex;
+  flex-direction: column;
+}
