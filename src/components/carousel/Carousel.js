@@ -1,6 +1,8 @@
 import React, { useEffect, Fragment, useState } from "react";
 import M from "materialize-css";
-import "./Carousel.css";
+import styles from "./carousel.module.css";
+import { Row, Col } from "react-materialize";
+import cx from "classnames";
 
 function Carousel() {
   const [title, setTitle] = useState("");
@@ -24,11 +26,21 @@ function Carousel() {
 
   return (
     <Fragment>
-      <div className="row center-align booktitle__wrapper">
-        <p className="book__title truncate">{title}</p>
-      </div>
-      <div className="row">
+      <Row className={cx("row", "center-align", styles.booktitle__wrapper)}>
+        <p className={cx(styles.book__title, "truncate")}>{title}</p>
+      </Row>
+      <Row>
         <div className="carousel">
+          <a
+            className="carousel-item"
+            href="#one!"
+            name="Homo Sapiens a brief history of HumanKind"
+          >
+            <img
+              src="https://i.insider.com/558033ac6bb3f76a7b3304f4?width=1100&format=jpeg&auto=webp"
+              alt=""
+            />
+          </a>
           <a
             className="carousel-item"
             href="#one!"
@@ -50,7 +62,7 @@ function Carousel() {
             />
           </a>
         </div>
-      </div>
+      </Row>
     </Fragment>
   );
 }

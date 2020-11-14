@@ -1,0 +1,63 @@
+.book__cover {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: all 1s;
+}
+
+.book__cover:hover {
+  transform: scale(1.075);
+}
+
+.margin__top {
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  width: 90%;
+}
+
+.title__text {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.author {
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.image__cover {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.custom__margin {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .author {
+    font-size: 0.8rem;
+  }
+
+  .input-field label {
+    font-size: 0.8rem;
+  }
+
+  .image__cover {
+    align-items: flex-start;
+    min-height: 1px;
+  }
+
+  .book__cover {
+    width: 70%;
+  }
+}

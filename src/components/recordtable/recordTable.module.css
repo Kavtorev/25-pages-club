@@ -1,0 +1,69 @@
+.recordTable .recordTable__body {
+  display: block;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.recordTable .recordTable__head,
+.recordTable .recordTable__body .recordTable__row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.recordTable__head__authorFilter,
+.recordTable__head__bookFilter {
+  padding: 0.2rem;
+}
+
+.recordTable__head__authorFilter .row,
+.recordTable__head__bookFilter .row {
+  margin-bottom: 0;
+}
+
+.recordTable__body__dateCol {
+  justify-self: flex-end;
+}
+
+.recordTable__head__colNames .recordTable__header {
+  padding: 0;
+}
+
+.recordTable__body__editOptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recordTable__body__editOptions .save__link {
+  margin-right: 0.5rem;
+}
+
+.recordTable__body__editOptions .recordTable__body__dateCol {
+  display: inline;
+  margin: auto auto;
+  justify-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .recordTable .recordTable__header,
+  .recordTable__record {
+    font-size: 1rem;
+  }
+
+  .recordTable .recordTable__record {
+    padding: 15px 0;
+  }
+
+  .recordTable__head__authorFilter,
+  .recordTable__head__bookFilter {
+    padding: 0.2rem;
+  }
+  .recordTable__head__authorFilter .row,
+  .recordTable__head__bookFilter .row,
+  .recordTable__head__bookFilter .input-field,
+  .recordTable__head__authorFilter .input-field {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}

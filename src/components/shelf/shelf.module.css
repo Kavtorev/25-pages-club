@@ -1,0 +1,30 @@
+.padding__top {
+  padding-top: 3rem;
+}
+
+.custom__tabs {
+  border-bottom: 1px dashed grey;
+  /* padding: 1rem; */
+}
+
+.custom__tabs .custom__tab .tab__link {
+  color: #000;
+} /*Black color to the text*/
+
+.custom__tabs .custom__tab .tab__link:hover {
+  background-color: #59d89b;
+  color: #000;
+} /*Text color on hover*/
+
+.custom__tabs .custom__tab a.active {
+  background-color: #59d89b;
+  color: #000;
+} /*Background and text color when a tab is active*/
+
+.custom__tabs.tabs .indicator {
+  background-color: #59d89b;
+} /*Color of underline*/
+
+.custom__tabs .custom__tab .tab__link:focus.active {
+  background-color: rgba(89, 216, 155, 0.2);
+}

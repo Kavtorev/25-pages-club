@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import M from "materialize-css";
 // import Carousel from "../carousel/Carousel";
-import "./Shelf.css";
+import styles from "./shelf.module.css";
+// cx() - allows to combine css-module classes and the ones belonging to materializecss
+import cx from "classnames";
+import { Row, Col } from "react-materialize";
 
 export default function Shelf() {
   const [curTab, setCurTab] = useState("");
@@ -26,30 +29,42 @@ export default function Shelf() {
   };
 
   return (
-    <div className="container padding__top">
-      <div className="row">
-        <div className="col s12">
-          <ul className="tabs">
-            <li className="tab col s3">
-              <a href="#read" onClick={handleOnTabChange}>
+    <div className={cx("container", styles.padding__top)}>
+      <Row>
+        <Col s={12}>
+          <ul className={cx(styles.custom__tabs, "tabs")}>
+            <li className={cx(styles.custom__tab, "tab col s3")}>
+              <a
+                href="#read"
+                className={styles.tab__link}
+                onClick={handleOnTabChange}
+              >
                 Read
               </a>
               <i class="fas fa-journal-whills"></i>
             </li>
-            <li className="tab col s3">
-              <a href="#reading" onClick={handleOnTabChange}>
+            <li className={cx(styles.custom__tab, "tab col s3")}>
+              <a
+                href="#reading"
+                className={styles.tab__link}
+                onClick={handleOnTabChange}
+              >
                 Reading
               </a>
               <i class="fas fa-journal-whills"></i>
             </li>
-            <li className="tab col s3">
-              <a href="#want-to-read" onClick={handleOnTabChange}>
+            <li className={cx(styles.custom__tab, "tab col s3")}>
+              <a
+                href="#want-to-read"
+                className={styles.tab__link}
+                onClick={handleOnTabChange}
+              >
                 Want to read
               </a>
               <i class="fas fa-journal-whills"></i>
             </li>
           </ul>
-        </div>
+        </Col>
         <div className="wrap">
           {curTab === "reading" ? (
             <h1>Reading</h1>
@@ -62,7 +77,7 @@ export default function Shelf() {
           <div id="reading"></div>
           <div id="want-to-read"></div>
         </div>
-      </div>
+      </Row>
     </div>
   );
 }

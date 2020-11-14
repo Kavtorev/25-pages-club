@@ -1,0 +1,11 @@
+.newrecord__form .input-field > label {
+  font-size: 1.125rem;
+}
+
+.newrecord__form > .row {
+  margin-bottom: 0rem;
+}
+
+.newrecord__form textarea.materialize-textarea {
+  height: 100px;
+}

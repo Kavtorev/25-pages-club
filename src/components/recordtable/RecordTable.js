@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./RecordTable.css";
+import styles from "./recordTable.module.css";
+import cx from "classnames";
 
 function RecordTable() {
   // const [dateSort, setDateSort] = useState("");
@@ -14,16 +15,21 @@ function RecordTable() {
   };
 
   return (
-    <table className="striped centered record__table">
-      <thead>
-        <tr className="field__names">
-          <th>Author</th>
+    <table className={cx("striped", "centered", styles.recordTable)}>
+      <thead className={styles.recordTable__head}>
+        <tr
+          className={cx(
+            styles.recordTable__head__colNames,
+            styles.recordTable__row
+          )}
+        >
+          <th className={styles.recordTable__header}>Author</th>
           <th>Book</th>
           <th>Date</th>
           <th>Pages</th>
         </tr>
         <tr>
-          <th className="author__filtering">
+          <th className={styles.recordTable__head__authorFilter}>
             <div className="row">
               <div className="input-field col s8 offset-s2">
                 <input
@@ -36,7 +42,7 @@ function RecordTable() {
               </div>
             </div>
           </th>
-          <th className="book__filtering">
+          <th className={styles.recordTable__head__bookFilter}>
             <div className="row">
               <div className="input-field col s8 offset-s2">
                 <input
@@ -70,29 +76,37 @@ function RecordTable() {
           </th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>
-            <div className="editing__sell">
+      <tbody className={styles.recordTable__body}>
+        <tr className={styles.recordTable__row}>
+          <td className={styles.recordTable__record}>
+            <div className={styles.recordTable__body__editOptions}>
               <a
                 href="#!"
                 class="btn-floating btn-small waves-effect waves-light"
               >
                 <i class="fas fa-edit"></i>
               </a>
-              <p className="date">21 / 07 / 2001</p>
+              <p className={styles.recordTable__body__dateCol}>
+                21 / 07 / 2001
+              </p>
             </div>
           </td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
+          <td className={styles.recordTable__record}>Jules Verne</td>
+          <td className={styles.recordTable__record}>Mistical Island</td>
+          <td className={styles.recordTable__record}>25</td>
         </tr>
-        <tr>
-          <td>
-            <div className="editing__sell">
+        <tr className={styles.recordTable__row}>
+          <td className={styles.recordTable__record}>
+            <div className={styles.recordTable__body__editOptions}>
               <a
                 href="#!"
-                class="btn-floating btn-small waves-effect waves-light save"
+                class={cx(
+                  "btn-floating",
+                  "btn-small",
+                  "waves-effect",
+                  "waves-light",
+                  styles.save__link
+                )}
               >
                 <i class="fas fa-save"></i>
               </a>
@@ -102,84 +116,20 @@ function RecordTable() {
               >
                 <i class="fas fa-undo-alt"></i>
               </a>
-              <p className="date">21 / 07 / 2001</p>
+              <p className={styles.recordTable__body__dateCol}>
+                21 / 07 / 2001
+              </p>
             </div>
           </td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
+          <td className={styles.recordTable__record}>Jules Verne</td>
+          <td className={styles.recordTable__record}>Mistical Island</td>
+          <td className={styles.recordTable__record}>25</td>
         </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>21 / 01 / 2001</td>
-          <td>Jules Verne</td>
-          <td>Mistical Island</td>
-          <td>25</td>
+        <tr className={styles.recordTable__row}>
+          <td className={styles.recordTable__record}>21 / 01 / 2001</td>
+          <td className={styles.recordTable__record}>Jules Verne</td>
+          <td className={styles.recordTable__record}>Mistical Island</td>
+          <td className={styles.recordTable__record}>25</td>
         </tr>
       </tbody>
     </table>

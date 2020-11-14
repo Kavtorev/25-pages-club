@@ -1,0 +1,12 @@
+.booktitle__wrapper {
+  margin-bottom: 0;
+}
+
+.book__title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  width: 90%;
+  color: rgb(46, 44, 44);
+  font-style: italic;
+}
