@@ -3,7 +3,7 @@ import styles from "./forgotPassword.module.css";
 import reader from "./thinking_person.png";
 import { Row, Col } from "react-materialize";
 import cx from "classnames";
-function ForgotAPassword() {
+function ForgotPassword() {
   return (
     <Row>
       <Col s={12} l={6}>
@@ -38,4 +38,4 @@ function ForgotAPassword() {
   );
 }
 
-export default ForgotAPassword;
+export default ForgotPassword;

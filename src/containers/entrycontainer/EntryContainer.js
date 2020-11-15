@@ -1,5 +1,5 @@
 import React from "react";
-import "./EntryContainer.css";
+import "./entryContainer.css";
 
 function EntryContainer(props) {
   return (

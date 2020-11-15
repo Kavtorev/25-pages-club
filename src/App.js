@@ -4,7 +4,7 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import SignIn from "./components/signin/SignIn.js";
 import Register from "./components/register/Register.js";
-import ForgotAPassword from "./components/forgotapass/ForgotAPassword";
+import ForgotPassword from "./components/forgotapass/ForgotPassword";
 import WorkShopContainer from "./containers/workshopcontainer/WorkShopContainer";
 import EntryContainer from "./containers/entrycontainer/EntryContainer";
 import Navigation from "./containers/navigationcontainer/Navigation";
@@ -39,7 +39,7 @@ function App() {
         <Route path="/signin">{renderEntryContainer(<SignIn />)}</Route>
         <Route path="/register">{renderEntryContainer(<Register />)}</Route>
         <Route path="/reset-password">
-          {renderEntryContainer(<ForgotAPassword />)}
+          {renderEntryContainer(<ForgotPassword />)}
         </Route>
       </Switch>
     </Fragment>

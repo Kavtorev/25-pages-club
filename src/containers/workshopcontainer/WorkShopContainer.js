@@ -3,21 +3,23 @@ import RecordTable from "../../components/recordtable/RecordTable.js";
 import Notebook from "../../components/notebook/Notebook";
 import Options from "../../components/options/Options";
 import NewRecordForm from "../..//components/newrecordform/NewRecordForm";
-import StartARead from "../../components/startaread/StartARead";
+import StartARead from "../../components/startaread/StartRead";
 import Stats from "../../components/stats/Stats";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
-import "./WorkShopContainer.css";
+import styles from "./workshopContainer.css";
+import cx from "classnames";
+import { Row, Col } from "react-materialize";
 
 function WorkShopContainer() {
   const { path, url } = useRouteMatch();
   return (
     <main>
-      <div className="wrapper container">
-        <div className="row">
-          <div className="col s12 m2 sticky__position">
+      <div className={cx(styles.wrapper, "container")}>
+        <Row>
+          <Col s={12} m={2} className={styles.sticky__position}>
             <Options url={url} />
-          </div>
-          <div className="col s12 m10 custom__margin">
+          </Col>
+          <Col s={12} m={10} className={styles.custom__margin}>
             <Switch>
               <Route exact path={path}>
                 <RecordTable />
@@ -35,8 +37,8 @@ function WorkShopContainer() {
                 <Stats />
               </Route>
             </Switch>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     </main>
   );
