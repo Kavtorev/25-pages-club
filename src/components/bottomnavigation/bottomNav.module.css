@@ -1,0 +1,8 @@
+.bottomNav__buttons button {
+  border-radius: 15%;
+}
+
+.disable__buttonFocus button:focus {
+  background-color: white;
+  color: #58b69a;
+}
