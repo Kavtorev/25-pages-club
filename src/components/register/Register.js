@@ -1,9 +1,9 @@
 import React from "react";
-import "./Register.css";
 import reader from "./undraw_reading_0re1.png";
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import validate from "./validation";
+import { Row, Col } from "react-materialize";
 
 function Register() {
   const formik = useFormik({
@@ -21,19 +21,19 @@ function Register() {
   });
   // register second nested
   return (
-    <div className="row">
-      <div className="col s12 m12 l6">
+    <Row>
+      <Col s={12} m={12} l={6}>
         <img className="decImage" src={reader} alt="" />
-      </div>
-      <div className="col s12 m12 l6">
-        <div className="row">
-          <div className="col s12">
+      </Col>
+      <Col s={12} m={12} l={6}>
+        <Row>
+          <Col s={12}>
             <h3 className="center-align">Register</h3>
-          </div>
-        </div>
+          </Col>
+        </Row>
         <form onSubmit={formik.handleSubmit}>
-          <div className="row">
-            <div className="input-field col s12 m12 l10">
+          <Row>
+            <Col s={12} m={12} l={10} className="input-field">
               <i className="material-icons prefix">account_circle</i>
               <input
                 id="icon_prefix"
@@ -48,10 +48,10 @@ function Register() {
               <span className="helper-text">
                 {formik.touched.username ? formik.errors.username : null}
               </span>
-            </div>
-          </div>
-          <div className="row">
-            <div className="input-field col s12 m12 l10">
+            </Col>
+          </Row>
+          <Row>
+            <Col s={12} m={12} l={10} className="input-field">
               <i className="material-icons prefix">email</i>
               <input
                 id="email"
@@ -66,10 +66,10 @@ function Register() {
               <span className="helper-text">
                 {formik.touched.email ? formik.errors.email : null}
               </span>
-            </div>
-          </div>
-          <div className="row">
-            <div className="input-field col s12 m12 l10">
+            </Col>
+          </Row>
+          <Row>
+            <Col s={12} m={12} l={10} className="input-field">
               <i className="material-icons prefix">lock_outline</i>
               <input
                 id="password"
@@ -86,10 +86,10 @@ function Register() {
               <span className="helper-text">
                 {formik.touched.password ? formik.errors.password : null}
               </span>
-            </div>
-          </div>
-          <div className="row">
-            <div className="input-field last__input col s12 m12 l10">
+            </Col>
+          </Row>
+          <Row>
+            <Col s={12} m={12} l={10} className="input-field">
               <i className="material-icons prefix">lock_outline</i>
               <input
                 id="retypedPassword"
@@ -107,26 +107,26 @@ function Register() {
                   ? formik.errors.retypedPassword
                   : null}
               </span>
-            </div>
-          </div>
-          <div className="row center-align">
+            </Col>
+          </Row>
+          <Row className="center-align">
             <button
               type="submit"
               name="action"
-              className="btn waves-effect waves-light"
+              className="btn waves-effect waves-light form__submitButton"
             >
               Register
             </button>
-          </div>
+          </Row>
         </form>
-        <div className="row center-align">
+        <Row className="center-align">
           <Link to="/signin" className="alternative">
             {" "}
             Sign In{" "}
           </Link>
-        </div>
-      </div>
-    </div>
+        </Row>
+      </Col>
+    </Row>
   );
 }
 
