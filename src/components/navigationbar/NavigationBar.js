@@ -1,111 +1,70 @@
-import React, { Fragment, useEffect } from "react";
-import "./NavigationBar.css";
+import React from "react";
+import styles from "./navBar.module.css";
 import { Link } from "react-router-dom";
 import logo from "./logo.png";
-import M from "materialize-css";
+import { Navbar, Icon, NavItem } from "react-materialize";
 
 function NavigationBar(props) {
-  const initializeSideNavPlugin = () => {
-    const elems = document.querySelectorAll(".sidenav");
-    M.Sidenav.init(elems, {});
-  };
-
-  useEffect(() => {
-    initializeSideNavPlugin();
-  }, []);
-
   return (
-    <Fragment>
-      <nav className="navigation">
-        <div className="nav-wrapper">
-          <Link to="/" className="brand-logo">
-            <img src={logo} style={{ width: 210 }} alt="" />
-          </Link>
-          <a href="#!" data-target="mobile-demo" className="sidenav-trigger">
-            <i className="material-icons">menu</i>
-          </a>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li>
-              <Link to="/shelf" className="">
-                Shelf
-              </Link>
-            </li>
+    <Navbar
+      alignLinks="right"
+      brand={
+        <Link to="/" className="brand-logo">
+          <img src={logo} style={{ width: 210 }} alt="" />
+        </Link>
+      }
+      id="mobile-nav"
+      menuIcon={<Icon>menu</Icon>}
+      options={{
+        draggable: true,
+        edge: "left",
+        inDuration: 250,
+        onCloseEnd: null,
+        onCloseStart: null,
+        onOpenEnd: null,
+        onOpenStart: null,
+        outDuration: 200,
+        preventScrolling: true,
+      }}
+      className={styles.navigation}
+    >
+      <NavItem>
+        <Link to="/shelf" className="sidenav-close">
+          Shelf
+        </Link>
+      </NavItem>
 
-            <li>
-              <Link to="/workshop" className="">
-                Table
-              </Link>
-            </li>
-
-            <li>
-              <Link to="/workshop/notation" className="">
-                Add a new note
-              </Link>
-            </li>
-            <li>
-              <Link to="/workshop/add-a-record" className="">
-                Another 25 pages
-              </Link>
-            </li>
-            <li>
-              <Link to="/workshop/start-a-read" className="">
-                Start a read
-              </Link>
-            </li>
-            <li>
-              <Link to="/signin" className="">
-                Sign In
-              </Link>
-            </li>
-            <li>
-              <Link to="/register" className="">
-                Sign Up
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <ul className="sidenav" id="mobile-demo">
-        <li>
-          <Link to="/shelf" className="">
-            Shelf
-          </Link>
-        </li>
-        <li>
-          <Link to="/workshop" className="sidenav-close">
-            Table
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/workshop/notation" className="sidenav-close">
-            Add a new note
-          </Link>
-        </li>
-        <li>
-          <Link to="/workshop/add-a-record" className="sidenav-close">
-            Another 25 pages
-          </Link>
-        </li>
-        <li>
-          <Link to="/workshop/start-a-read" className="sidenav-close">
-            Start a read
-          </Link>
-        </li>
-        <li>
-          <Link to="/signin" className="sidenav-close">
-            Sign In
-          </Link>
-        </li>
-        <li>
-          <Link to="/register" className="sidenav-close">
-            Sign Up
-          </Link>
-        </li>
-      </ul>
-      {props.children}
-    </Fragment>
+      <NavItem>
+        <Link to="/workshop" className="sidenav-close">
+          Table
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/workshop/notation" className="sidenav-close">
+          Add a new note
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/workshop/add-a-record" className="sidenav-close">
+          Another 25 pages
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/workshop/start-a-read" className="sidenav-close">
+          Start a read
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/signin" className="sidenav-close">
+          Sign In
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/register" className="sidenav-close">
+          Sign Up
+        </Link>
+      </NavItem>
+    </Navbar>
   );
 }
 

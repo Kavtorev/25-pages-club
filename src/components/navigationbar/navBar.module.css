@@ -1,0 +1,13 @@
+.navigation {
+  background-color: #58b69a;
+}
+
+.navigation .brand-logo > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navigation ul a,
+.sidenav li > a {
+  font-size: 1rem;
+}
