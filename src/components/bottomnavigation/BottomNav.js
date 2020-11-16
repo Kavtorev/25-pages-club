@@ -60,13 +60,14 @@ function BottomNav() {
         styles.bottomNav__buttons
       )}
     >
-      {buttons.map((btn) => {
+      {buttons.map((btn, i) => {
         return (
           <BottomNavigationAction
             label={btn.label}
             icon={btn.icon}
             component={Link}
             to={`${url}${btn.link}`}
+            key={i}
           ></BottomNavigationAction>
         );
       })}

@@ -52,7 +52,9 @@ function StartARead() {
             </Col>
           </Row>
         </Col>
-        <Col s={12} m={8} l={6} offset="m2">
+        <Col s={12} l={6}>
+          {/* m={8} */}
+          {/* offset="m2" */}
           <Row>
             <Col s={12} m={9} className="input-field">
               <i class="material-icons prefix">chevron_left</i>

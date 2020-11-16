@@ -11,7 +11,7 @@
 }
 
 .margin__top {
-  margin-top: 2rem;
+  margin-top: 2em;
 }
 
 .title {
@@ -36,22 +36,10 @@
 }
 
 .custom__margin {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
 }
 
 @media only screen and (max-width: 992px) {
-  .title {
-    font-size: 1.2rem;
-  }
-
-  .author {
-    font-size: 0.8rem;
-  }
-
-  .input-field label {
-    font-size: 0.8rem;
-  }
-
   .image__cover {
     align-items: flex-start;
     min-height: 1px;

@@ -27,7 +27,7 @@
 
 /* style for the row which wraps the subrows */
 .container.template__container > .row {
-  padding: 2rem;
+  padding: 2em;
 }
 /* styles for the subrows */
 .container.template__container .row {
@@ -44,7 +44,7 @@
 
 .container.template__container .form__submitButton {
   background-color: #465455;
-  padding: 0 4rem;
+  padding: 0 4em;
   border-radius: 5px;
 }
 
@@ -67,7 +67,7 @@
 
 .decImage {
   display: block;
-  margin: 3.5rem auto;
+  margin: 3.5em auto;
   width: 300px;
 }
 
@@ -75,7 +75,7 @@
   color: #695d5d;
   cursor: pointer;
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
 }
 
 @media only screen and (max-width: 600px) {

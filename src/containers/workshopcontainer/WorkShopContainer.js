@@ -6,7 +6,7 @@ import NewRecordForm from "../..//components/newrecordform/NewRecordForm";
 import StartARead from "../../components/startaread/StartRead";
 import Stats from "../../components/stats/Stats";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
-import styles from "./workshopContainer.css";
+import styles from "./workshopContainer.module.css";
 import cx from "classnames";
 import { Row, Col } from "react-materialize";
 
@@ -15,7 +15,7 @@ function WorkShopContainer() {
   return (
     <main>
       <div className={cx(styles.wrapper, "container")}>
-        <Row>
+        <Row className={styles.padding}>
           <Col s={12} m={2} className={styles.sticky__position}>
             <Options url={url} />
           </Col>

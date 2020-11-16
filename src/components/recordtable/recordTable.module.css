@@ -13,7 +13,7 @@
 
 .recordTable__head__authorFilter,
 .recordTable__head__bookFilter {
-  padding: 0.2rem;
+  padding: 0.2em;
 }
 
 .recordTable__head__authorFilter .row,
@@ -36,7 +36,7 @@
 }
 
 .recordTable__body__editOptions .save__link {
-  margin-right: 0.5rem;
+  margin-right: 0.5em;
 }
 
 .recordTable__body__editOptions .recordTable__body__dateCol {
@@ -48,7 +48,7 @@
 @media only screen and (max-width: 600px) {
   .recordTable .recordTable__header,
   .recordTable__record {
-    font-size: 1rem;
+    font-size: 1em;
   }
 
   .recordTable .recordTable__record {
@@ -57,7 +57,7 @@
 
   .recordTable__head__authorFilter,
   .recordTable__head__bookFilter {
-    padding: 0.2rem;
+    padding: 0.2em;
   }
   .recordTable__head__authorFilter .row,
   .recordTable__head__bookFilter .row,

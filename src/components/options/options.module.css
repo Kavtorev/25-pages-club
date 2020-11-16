@@ -11,13 +11,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
-  margin: 0.5rem;
+  /* width: 70px; */
+  /* height: 70px; */
+  width: 4.375em;
+  height: 4.375em;
+  margin: 0.5em;
 }
 
 .options .option__button {
-  line-height: 30px;
+  line-height: 1.875em;
   text-transform: none;
 }
 

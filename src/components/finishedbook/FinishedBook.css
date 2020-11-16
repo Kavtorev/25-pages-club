@@ -96,10 +96,10 @@
   }
 
   .padding__on__small {
-    padding: 1rem;
+    padding: 1em;
   }
 
   .margin__bottom {
-    margin-bottom: 5rem;
+    margin-bottom: 5em;
   }
 }
