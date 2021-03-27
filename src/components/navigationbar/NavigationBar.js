@@ -10,7 +10,7 @@ function NavigationBar(props) {
       alignLinks="right"
       brand={
         <Link to="/" className="brand-logo">
-          <img src={logo} style={{ width: 210 }} alt="" />
+          <img src={logo} style={{ width: 80 }} alt="" />
         </Link>
       }
       id="mobile-nav"
